@@ -7,9 +7,6 @@ const commentsController = require("../controllers/comments");
 const authMiddleware = require("../middlewares/auth");
 const newsMiddleware = require("../middlewares/news");
 
-router
-  .route("/:id/comments")
-  .get(authMiddleware.isAuth, commentsController.getByNovelty);
 router.get("/", authMiddleware.isAdmin, paginateMiddleware.pageValidation, newsController.getAll);
 router.post(
   "/",
