@@ -23,17 +23,6 @@ const update = async (id, data) => {
   return comment;
 };
 
-const getByNovelty = async (novelty) => {
-  const comments = await Models.Comments.findAll({
-    attributes: ['body'],
-    order: [['createdAt', 'ASC']],
-    where: {
-      novelty_id: novelty,
-    },
-  });
-  return comments;
-};
-
 const remove = async (id) => {
   await Models.Comments.destroy({ where: { id } });
 };
@@ -43,6 +32,5 @@ module.exports = {
   create,
   getById,
   update,
-  getByNovelty,
   remove
 };
