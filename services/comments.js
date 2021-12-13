@@ -25,11 +25,6 @@ const update = async (id, bodyUpdate) => {
   return data;
 };
 
-const getByNovelty = async (id) => {
-  const data = await commentsRepository.getByNovelty(id);
-  return data;
-};
-
 const remove = async (id) => {
   const comment = await commentsRepository.getById(id);
   if (!comment) throw new Error('bad request');
@@ -42,6 +37,5 @@ module.exports = {
   create,
   update,
   getById,
-  getByNovelty,
   remove
 };
