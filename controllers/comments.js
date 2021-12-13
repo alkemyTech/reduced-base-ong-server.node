@@ -46,6 +46,5 @@ module.exports = {
   create,
   getAll,
   update,
-  getByNovelty,
   remove
 };
