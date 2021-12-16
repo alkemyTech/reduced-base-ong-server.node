@@ -9,8 +9,8 @@ const membersRoute = require('./members');
 const commentsRoutes = require('./comments');
 const slidesRoute = require('./slides');
 
-router.use('/organizations', organizationRoutes);
 router.use('/categories', categoriesRoutes);
+router.use('/organizations', organizationRoutes);
 router.use('/testimonials', testimonialsRoutes);
 router.use('/members', membersRoute);
 router.use('/comments', commentsRoutes);

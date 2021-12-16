@@ -22,9 +22,6 @@ module.exports = (sequelize, DataTypes) => {
     email: DataTypes.STRING,
     welcomeText: DataTypes.TEXT,
     aboutUsText: DataTypes.TEXT,
-    urlFacebook: DataTypes.STRING,
-    urlLinkedin: DataTypes.STRING,
-    urlInstagram: DataTypes.STRING,
     deletedAt: DataTypes.DATE
   }, {
     sequelize,
