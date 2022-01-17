@@ -18,9 +18,6 @@ module.exports = {
                     comunidad y agrandando y mejorando nuestra capacidad de trabajo. Hoy somos un
                     centro comunitario que acompaña a más de 700 personas a través de las áreas de:
                     Educación, deportes, primera infancia, salud, alimentación y trabajo social.`,
-      urlFacebook: 'https://www.facebook.com/Somos_Más',
-      urlLinkedin: 'https://www.linkedin.com/in/SomosMás/',
-      urlInstagram: 'https://www.instagram.com/SomosMás',
       createdAt: new Date(),
       updatedAt: new Date()
     }], {});
